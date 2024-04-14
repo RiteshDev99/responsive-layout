@@ -1,3 +1,3 @@
-adding image # Responsive-layout
+ # Responsive-layout
 
 A fully responsive ui in html css
