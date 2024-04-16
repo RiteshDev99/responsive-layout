@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Gilroy';
     box-sizing: border-box;
 }
 
@@ -9,6 +11,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    font-family: 'Gilroy';
 }
 
 
@@ -25,6 +28,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 4vw;
+    font-family: "Montserrat", sans-serif;
 
 }
 
@@ -112,24 +116,7 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:600px) {
+@media(max-width:1200px) {
     .nav {
         padding: 0 5vw;
         height: 60px;
@@ -186,11 +173,5 @@ h2 {
         border-radius: 3px;
         font-size: 3.5vw;
         font-weight: 600;
-    }
-
-
-    .left h1 span {
-        color: rgb(48, 165, 33);
-        width: fit-content;
     }
 }
