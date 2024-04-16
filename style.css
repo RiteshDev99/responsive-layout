@@ -1,56 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Gilroy';
     box-sizing: border-box;
 }
 
-html,
 body {
-    height: 100%;
-    width: 100%;
-}
-
-
-.main-box {
-    height: 100%;
-    width: 100%;
-    position: relative;
+    font-family: 'Gilroy';
+    margin: 0px;
 }
 
 .nav {
-    height: 100px;
     width: 100%;
+    min-height: 20vh;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 4vw;
+    font-family: "Montserrat", sans-serif;
 
 }
 
 .nav-part2 {
+    width: 80%;
     display: flex;
-    gap: 4vw;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-h2 {
-    font-size: 1.5vw;
-    font-weight: 700;
-}
-
-.nav h4 {
-    font-size: 1.2vw;
-}
-
 .nav button {
-    font-size: 1vw;
-    padding: 0.7vw 1.4vw;
+    padding: 10px 20px;
     background-color: lightseagreen;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-weight: 600;
+    cursor: pointer;
+    font-size: large;
+    transition: .2s ease-in-out;
+}
+
+.nav button:hover {
+    background-color: rgb(21, 117, 112);
 }
 
 .nav i {
@@ -59,138 +52,136 @@ h2 {
     display: none;
 }
 
-.content {
-    height: calc(100% - 100px);
+.links {
+    list-style: none;
     width: 100%;
     display: flex;
-    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.left {
-    height: 100%;
-    width: 55%;
-    padding: 5vw 4vw;
+.links a {
+    padding: 10px;
+    margin: 20px;
+    list-style: none;
+    color: black;
+    border-top: transparent;
+    border-bottom: transparent;
+    text-decoration: none;
+    transition: .2s ease-in-out;
 }
 
-.left h1 {
-    font-size: 4.2vw;
-    line-height: 4.4vw;
+
+.links a:hover {
+    border-top: solid lightseagreen;
+    border-bottom: solid lightseagreen;
 }
 
-.left h1 span {
-    color: lightseagreen;
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    margin: 40px;
 }
 
-.left p {
-    font-size: 1.2vw;
-    font-weight: 600;
-    color: #666;
-    width: 80%;
-    margin-top: 1.5vw;
-    margin-bottom: 3vw;
-}
 
 .content button {
-    font-size: 1.2vw;
-    padding: 1.1vw 2.1vw;
+    padding: 10px 20px;
     background-color: lightseagreen;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-weight: 700;
+    cursor: pointer;
+    font-size: large;
+    transition: .2s ease-in-out;
+}
+
+.content button:hover {
+    background-color: rgb(21, 117, 112);
+}
+
+
+
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.left h1 {
+    font-size: 3rem;
+}
+
+.left p {
+    margin: 20px 0px;
+    font-size: 1.2rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.left button {
+    margin: 20px 0px;
 }
 
 .right {
-    height: 100%;
-    width: 45%;
-
+    width: 50%;
 }
 
 .right img {
-    height: 100%;
     width: 100%;
 }
 
+@media(max-width:800px) {
 
+    body{
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:600px) {
     .nav {
-        padding: 0 5vw;
-        height: 60px;
+        background-color: rgb(52, 51, 51);
+        flex-direction: column;
     }
 
-    .nav h2 {
-        font-size: 5.1vw;
+    .logo{
+        color: #fff;
     }
+
+    .links {
+        flex-direction: column;
+    }
+
+    .links a {
+        color: #fff;
+        margin: 20px 0px;
+    }
+
 
     .nav button {
         display: none;
     }
 
-    .nav h4 {
-        font-size: 4vw;
-        display: none;
-    }
-
-    .nav i {
-        display: block;
-        font-size: 4.5vw;
-    }
-
     .content {
-        height: calc(100% - 60px);
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        width: 80%;
+
     }
 
     .left {
-        width: 100%;
-        height: 45%;
-        padding: 4vw 6vw;
+        width: 80%;
+    }
+
+    .left p{
+        font-size: 1rem;
     }
 
     .right {
-        width: 100%;
-        height: 55%;
+        width: 80%;
     }
 
-    .left h1 {
-        font-size: 10vw;
-        line-height: 11vw;
-    }
-
-    .left p {
-        font-size: 3vw;
-        width: 90%;
-        margin-top: 5vw;
-        margin-bottom: 6vw;
-    }
-
-    .content button {
-        padding: 3vw 6vw;
-        border-radius: 3px;
-        font-size: 3.5vw;
-        font-weight: 600;
-    }
-
-
-    .left h1 span {
-        color: rgb(48, 165, 33);
-        width: fit-content;
-    }
 }
